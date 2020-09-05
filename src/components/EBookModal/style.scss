@@ -1,0 +1,25 @@
+@import "../../styles/colours.scss";
+
+.infusion-form {
+  .infusion-field {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: $brand-green;
+    padding: 20px 10px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-color: transparent;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($brand-green, 3%);
+    }
+  }
+}
