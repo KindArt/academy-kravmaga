@@ -1,17 +1,18 @@
 module.exports = {
+  pathPrefix: "/academy-kravmaga",
   siteMetadata: {
-    title: `Sega Fitness`,
-    fullTitle: "Sega Health & Fitness",
-    description: `Medway's Body Transformation Coach`,
+    title: `Krav Maga`,
+    fullTitle: "Krav Maga Academy",
+    description: `Grow in Fitness, Confidence & Skills`,
     author: `Kind Art`,
     companyAddress: "Unit A, Elm Court, Capstone Road, Gillingham, ME7 3JQ",
-    facebookUrl: "https://www.facebook.com/SegaFitness/",
-    instagramUrl: "https://www.instagram.com/segafitnessmedway/",
-    contactNumber: "07383 363 326",
-    googleMapApiKey: "AIzaSyAUAYxlyMyuhcKaBXq1LMxBWUh4mqYgpik",
+    facebookUrl: "https://www.facebook.com/AcademyKravMaga/",
+    instagramUrl: "https://www.instagram.com/kravmaga_uk/",
+    contactNumber: "07853 976 699",
+    googleMapApiKey: "",
     addressLongitude: "0.563630",
     addressLatitude: "51.341340",
-    siteUrl: `http://www.segafitness.co.uk`,
+    siteUrl: `http://www.academy-kravmaga.co.uk/`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -29,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `sega-fitness-site`,
-        short_name: `sega-fitness`,
+        name: `academy-kravmaga-site`,
+        short_name: `academy-kravmaga`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

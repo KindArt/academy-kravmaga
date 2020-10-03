@@ -1,10 +1,10 @@
 @import "../../styles/colours.scss";
 @import "../../styles//mediaWidths.scss";
 
-$logo-height-mobile: 50px;
-$logo-width-mobile: 50px;
-$logo-height-desktop: 150px;
-$logo-width-desktop: 150px;
+$logo-height-mobile: 25px;
+$logo-width-mobile: 100px;
+$logo-height-desktop: 50px;
+$logo-width-desktop: 200px;
 
 .navigationBar {
   padding: 30px 0;
@@ -44,7 +44,7 @@ $logo-width-desktop: 150px;
             font-size: 14px;
 
             &:hover {
-              color: $brand-green;
+              color: $brand-orange;
             }
           }
 
@@ -111,7 +111,7 @@ $logo-width-desktop: 150px;
             font-size: 14px;
 
             &:hover {
-              color: $brand-green;
+              color: $brand-orange;
             }
           }
 

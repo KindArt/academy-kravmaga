@@ -1,9 +1,8 @@
-# Sega Fitness
+# Krav Maga Adults
 
-The repository for www.segafitness.co.uk
+The repository for
 
 Other domains that point to this website:
-www.segafitness.com
 
 ## Get Started
 

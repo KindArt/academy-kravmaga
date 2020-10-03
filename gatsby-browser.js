@@ -12,8 +12,6 @@
 //   document.body.appendChild(script)
 // }
 
-// import "bootstrap/dist/css/bootstrap.min.css"
-
 export const onClientEntry = () => {
   window.onload = () => {
     // addScript("https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0")

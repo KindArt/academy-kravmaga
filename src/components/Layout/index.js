@@ -79,7 +79,7 @@ const Layout = ({ children }) => {
                   <Link to="/success-stories">Success Stories</Link>
                 </li>
                 <li>
-                  <a href="mailto:hello@segafitness.co.uk">Contact</a>
+                  <a href="mailto:peter@academy-kravmaga.co.uk">Contact</a>
                 </li>
               </ul>
             </div>
@@ -87,8 +87,8 @@ const Layout = ({ children }) => {
             <div className="column facebookPosts">
               <h3 className="title">Like Us On Facebook</h3>
               <iframe
-                title="Sega Fitness Facebook Updates"
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSegaFitness%2F&tabs=timeline&width=225&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                title="Krav Maga Facebook Updates"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcademyKravMaga%2F&tabs=timeline&width=225&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
                 width="225"
                 height="400"
                 style={{ border: "none", overflow: "hidden" }}
@@ -102,7 +102,6 @@ const Layout = ({ children }) => {
             <div className="column address">
               <h3 className="title">Contact Us</h3>
               <p className="companyName">{fullTitle}</p>
-              <p className="subtitle">Medways Body Coach</p>
 
               <p className="companyAddress">{companyAddress}</p>
 
