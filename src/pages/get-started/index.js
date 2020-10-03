@@ -5,9 +5,9 @@ import NavigationBar from "../../components/NavigationBar"
 import phoneIcon from "../../images/phoneIcon.png"
 import peopleIcon from "../../images/peopleIcon.png"
 import pointIcon from "../../images/pointIcon.png"
-import testimonialIanImg from "../../images/testimonial-ian.png"
-import testimonialKirstieImg from "../../images/testimonial-kirstie.png"
-import testimonialLeeImg from "../../images/testimonial-lee.png"
+import testimonialKevinImg from "../../images/testimonial-kevin.png"
+import testimonialNeilImg from "../../images/testimonial-neil.png"
+import testimonialGrahamImg from "../../images/testimonial-graham.png"
 import "./style.scss"
 
 const GetStarted = () => (
@@ -85,10 +85,10 @@ const GetStarted = () => (
             </div>
             <div className="column calendar">
               <iframe
-                title="Sega Fitness Appointment Calendar"
-                src="//www.appointmentcore.com/app/freeslots/uuPAhxDuj?iframe-view=SlotsV2"
+                title="Krav Maga Appointment Calendar"
+                src="//www.appointmentcore.com/app/freeslots/P2viRiMT?iframe-view=SlotsV2"
                 style={{ width: "100%", height: "900px", border: "0px none" }}
-                frameBorder="0"
+                frameborder="0"
               ></iframe>
             </div>
           </div>
@@ -108,31 +108,32 @@ const GetStarted = () => (
         <div className="container">
           <div className="testimonials">
             <div className="testimonial">
-              <img src={testimonialIanImg} alt="Testimonial - Ian" />
+              <img src={testimonialKevinImg} alt="Testimonial - Ian" />
               <p className="text">
-                "If you want to get fit and healthy, I can highly recommend Sega
-                Fitness. I've been training 3 to 4 times a week for about 3
-                weeks with them so far and I already feel the benefits."
+                "The Atmosphere in the academy is just terrific. Everybody
+                really, really wants to support each other."
               </p>
-              <p className="name">Ian 51, Rochester</p>
+              <p className="name">Kevin 56, Hoo</p>
             </div>
             <div className="testimonial">
-              <img src={testimonialKirstieImg} alt="Testimonial - Ian" />
+              <img src={testimonialNeilImg} alt="Testimonial - Ian" />
               <p className="text">
-                "I have been training with Sega Fitness since the beginning of
-                this year and have really seen an improvement in my weight (lost
-                over 15kg so far), plus my body shape and general fitness."
+                "Before Krav Maga I was overweight, unhealthy... I used to get
+                home from work and have a couple of beers.. Since starting I've
+                lost over 2 stone in weight. Everything about my life has just
+                got better!"
               </p>
-              <p className="name">Kirstie 37, Medway</p>
+              <p className="name">Neil 45, Rochester</p>
             </div>
             <div className="testimonial">
-              <img src={testimonialLeeImg} alt="Testimonial - Ian" />
+              <img src={testimonialGrahamImg} alt="Testimonial - Ian" />
               <p className="bold">
-                "This has helped me so much... Karolina is an excellent coach,
-                who pushes us to our limits and beyond. I'd thoroughly recommend
-                it to people of all fitness levels."
+                "My fitness levels were pretty much non existent... It was a
+                good place to come to and for the first time in my life,
+                couldn't wait to come back to do more fitness! It is just
+                great!"
               </p>
-              <p className="name">Lee 50, Medway</p>
+              <p className="name">Graham 51, Medway</p>
             </div>
           </div>
         </div>

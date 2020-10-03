@@ -10,9 +10,9 @@ import eBookImage from "../../images/ebook.png"
 import phoneIcon from "../../images/phoneIcon.png"
 import peopleIcon from "../../images/peopleIcon.png"
 import pointIcon from "../../images/pointIcon.png"
-import kirstieSuccess from "../../images/kirstie-36-success-comparison.jpg"
-import stephenSuccess from "../../images/stephen-30-success-comparison.jpg"
-import neilSuccess from "../../images/neil-45-success-comparison.jpg"
+import eddieTestimonial from "../../images/eddie-testimonial.png"
+import brendaTestimonial from "../../images/brenda-testimonial.png"
+import glennTestimonial from "../../images/glenn-testimonial.png"
 
 import "./style.scss"
 
@@ -32,20 +32,21 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      <EbookModal displayModal={show} handleClose={handleClose} />
+      {show && <EbookModal handleClose={handleClose} />}
       <div className="homePageWrapper">
         <NavigationBar />
         <div className="banner">
           <div className="container">
-            <h1>Medway's Body Transformation Coach</h1>
+            <h1>Grow in Fitness, Confidence &amp; Skills</h1>
             <p className="summary">
-              Let us help you grow in fitness, confidence and wellbeing. It’s
-              time to invest in yourself and change your body &amp; your life.
-              We promise to help you to achieve &amp; maintain your best health
-              in a non intimidating and friendly environment with no egos! Have
-              fun, meet new people and change your life in a positive way.
+              It's time to invest in yourself and focus on nurturing your own
+              development. We promise to teach you everything we know about self
+              defence to protect yourself and your loved ones. In return, your
+              time and commitment are your most important pieces of equipment
+              and we ask that you bring them to every session. Have fun, meet
+              new people and change your life in a positive way.
             </p>
-            <p className="caption">Become Limitless</p>
+            <p className="caption">Build a Powerful You</p>
             <div
               className="button cta"
               role="button"
@@ -64,11 +65,10 @@ const IndexPage = props => {
                 <img src={eBookImage} alt="eBook" />
               </div>
               <div className="eBookContent">
-                <h1>You can be our next success story!</h1>
+                <h1>Want to see what success looks like?</h1>
                 <p>
-                  You can count on us to guarantee your success and transform
-                  your body faster than anything you have experienced before...
-                  Check out our success stories so far!
+                  Check out 4 inspirational people who transformed their bodies
+                  and changed their lives. If they can do it then why can't you?
                 </p>
                 <div
                   className="button cta"
@@ -87,7 +87,7 @@ const IndexPage = props => {
           <div className="container">
             <div className="content">
               <div className="column">
-                <h2>Why Sega Fitness Is The Right Fit for You?</h2>
+                <h2>Why Krav Maga Academy Is The Right Fit for You?</h2>
                 <p>
                   You are, no doubt, a high achiever in many respects.
                   Hardworking and professionally driven, you provide and care
@@ -97,30 +97,26 @@ const IndexPage = props => {
                 </p>
                 <p>
                   Staying active to a degree is one thing but, in truth, you
-                  don’t know how to achieve the results you desire, the results
-                  you deserve. There is no blame or shame in that, you’re no
-                  different to any other client that has walked through our
-                  doors.
+                  don't know how to achieve the results you desire, the results
+                  you deserve. There is no blame or shame to be dealt, you're no
+                  different to any academy member that has walked through our
+                  doors. You’ve devoted everything to building the foundations
+                  of a happy life: this might be your family, your career or
+                  your home.
                 </p>
                 <p>
-                  Loving yourself is the new goal and it would be a privilege
-                  for us to walk beside you on this journey.
+                  Imagine if you turned that same love and attention to
+                  yourself: that's YOU. It's by prioritising yourself, the maker
+                  of your own life, that you create a masterpiece.
                 </p>
                 <p>
-                  With the right tools and strategies, we can build better
-                  habits into your life to help you go the distance and reach
-                  your goal.
-                </p>
-                <p>
-                  Our programmes are designed to keep you grounded and held
-                  accountable to a personalised, tried and tested plan for
-                  healthy results.
+                  Investing in yourself is the new goal and it would be a
+                  privilege for us to walk beside you on this journey.
                 </p>
                 <p>
                   Take control and get ready to greet your true self, empowered
                   and fuelled to live a life without limits.
                 </p>
-                <p className="bold">Become limitless.</p>
               </div>
               <div className="column">
                 <div className="iconCard">
@@ -147,8 +143,9 @@ const IndexPage = props => {
                     <h3>Come In For a Meeting</h3>
                     <p>
                       We want you to come and see our unique training space, get
-                      comfortable, get to know you better and find out if we are
-                      a great fit.
+                      comfortable and meet the team and the other members. You
+                      will be learning in a safe, friendly and passionate
+                      environment.
                     </p>
                   </div>
                 </div>
@@ -181,10 +178,41 @@ const IndexPage = props => {
             </div>
           </div>
         </div>
-        <div className="gallery">
-          <img src={kirstieSuccess} alt="Kirstie's before and after photos" />
-          <img src={stephenSuccess} alt="Stephen's before and after photos" />
-          <img src={neilSuccess} alt="Neil's before and after photos" />
+        <div className="testimonialsWrapper">
+          <div className="container">
+            <div className="testimonials">
+              <div className="testimonial">
+                <img src={eddieTestimonial} alt="Testimonial - Eddie" />
+                <p className="text">
+                  "I neglected myself... I dedicated 10 years of my life to my
+                  career at the detriment of my health. I started to look in the
+                  mirror and not recognise the person I was seeing."
+                </p>
+                <p className="name">Eddie 50, Medway</p>
+              </div>
+              <div className="testimonial">
+                <img src={brendaTestimonial} alt="Testimonial - Brenda" />
+                <p className="text">
+                  "I was concerned I wouldn't be good enough or strong enough...
+                  I was hooked straight away, absolutely loved it... as a female
+                  walking in, you don't have to worry about the egos of alpha
+                  males. It’s a very friendly, welcoming environment."
+                </p>
+                <p className="name">Brenda 43, Medway</p>
+              </div>
+              <div className="testimonial">
+                <img src={glennTestimonial} alt="Testimonial - Glenn" />
+                <p className="bold">
+                  "The biggest thing that I did notice after going to other
+                  clubs, is there was no egos. You know, there're big guys,
+                  there're small guys, there're women. They were here to train
+                  well and also help everyone else out so you felt part of a
+                  club."
+                </p>
+                <p className="name">Glenn 45, Boxley</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="mapContainer">
           {isClient && (

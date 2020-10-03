@@ -1,26 +1,28 @@
 import React from "react"
-import Modal from "react-bootstrap/Modal"
 
 import "./style.scss"
 
-const EbookModal = ({ displayModal, handleClose }) => {
+const EbookModal = ({ handleClose }) => {
   return (
-    <Modal show={displayModal} onHide={handleClose} animation={false}>
-      <Modal.Header closeButton>
-        <Modal.Title>SEGA Fitness Ebook</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
+    <div className="modal">
+      <div className="modal-content">
+        <div className="modelHeader">
+          <span className="close" onClick={handleClose}>
+            &times;
+          </span>
+          <h2>Get Your Free Ebook</h2>
+        </div>
         <form
-          acceptCharset="UTF-8"
-          action="https://kj305.infusionsoft.com/app/form/process/435b79da8bb459713b61183530c3cff4"
-          className="infusion-form"
-          id="inf_form_435b79da8bb459713b61183530c3cff4"
+          accept-charset="UTF-8"
+          action="https://kj305.infusionsoft.com/app/form/process/d4569868b4e023b095350545c81b97e1"
+          class="infusion-form"
+          id="inf_form_d4569868b4e023b095350545c81b97e1"
           method="POST"
         >
           <input
             name="inf_form_xid"
             type="hidden"
-            value="435b79da8bb459713b61183530c3cff4"
+            value="d4569868b4e023b095350545c81b97e1"
           />
           <input
             name="inf_form_name"
@@ -30,42 +32,42 @@ const EbookModal = ({ displayModal, handleClose }) => {
           <input
             name="infusionsoft_version"
             type="hidden"
-            value="1.70.0.270527"
+            value="1.70.0.275359"
           />
-          <div className="infusion-field">
-            <label htmlFor="inf_field_FirstName">First Name *</label>
+          <div class="infusion-field">
+            <label for="inf_field_FirstName">First Name *</label>
             <input
-              required
-              className="infusion-field-input"
+              class="infusion-field-input"
               id="inf_field_FirstName"
               name="inf_field_FirstName"
               type="text"
             />
           </div>
-          <div className="infusion-field">
-            <label htmlFor="inf_field_Email">Email *</label>
+          <div class="infusion-field">
+            <label for="inf_field_Email">Email *</label>
             <input
-              required
-              className="infusion-field-input"
+              class="infusion-field-input"
               id="inf_field_Email"
               name="inf_field_Email"
               type="text"
             />
           </div>
-          <div className="infusion-field">
-            <label htmlFor="inf_field_Phone1">Phone Number *</label>
+          <div class="infusion-field">
+            <label for="inf_field_Phone1">Phone Number *</label>
             <input
-              required
-              className="infusion-field-input"
+              class="infusion-field-input"
               id="inf_field_Phone1"
               name="inf_field_Phone1"
               type="text"
             />
           </div>
-          <div className="infusion-submit">
+          <div>
+            <div>&nbsp;</div>
+          </div>
+          <div class="infusion-submit">
             <button
-              className="infusion-recaptcha"
-              id="recaptcha_435b79da8bb459713b61183530c3cff4"
+              class="infusion-recaptcha"
+              id="recaptcha_d4569868b4e023b095350545c81b97e1"
               type="submit"
             >
               Submit
@@ -78,7 +80,7 @@ const EbookModal = ({ displayModal, handleClose }) => {
         ></script>
         <script
           type="text/javascript"
-          src="https://kj305.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.270527-hf-202009010410"
+          src="https://kj305.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.275359-hf-202009101703"
         ></script>
         <script
           src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit"
@@ -87,10 +89,10 @@ const EbookModal = ({ displayModal, handleClose }) => {
         ></script>
         <script
           type="text/javascript"
-          src="https://kj305.infusionsoft.com/app/timezone/timezoneInputJs?xid=435b79da8bb459713b61183530c3cff4"
+          src="https://kj305.infusionsoft.com/app/timezone/timezoneInputJs?xid=d4569868b4e023b095350545c81b97e1"
         ></script>
-      </Modal.Body>
-    </Modal>
+      </div>
+    </div>
   )
 }
 

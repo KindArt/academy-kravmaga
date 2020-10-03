@@ -1,7 +1,7 @@
 {
-  "name": "sega-fitness",
+  "name": "krav-maga-adults",
   "private": true,
-  "description": "Sega Fitness - Medways Body Transformation Coach",
+  "description": "Krav Maga - Grow in Fitness, Confidence & Skills",
   "version": "0.1.0",
   "author": "Kind Art <contact@kindart.co.uk>",
   "dependencies": {
@@ -45,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kindart/sega-fitness"
+    "url": "https://github.com/kindart/krav-maga-adults"
   }
 }

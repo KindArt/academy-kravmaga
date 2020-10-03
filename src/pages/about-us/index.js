@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/Seo"
 import NavigationBar from "../../components/NavigationBar"
-import whoWeAreImg from "../../images/who-we-are.jpeg"
+import whoWeAreImg from "../../images/who-we-are.png"
 import whoWeHelpImg from "../../images/who-we-help.png"
 import myStoryImg from "../../images/my-story.png"
 import "./style.scss"
@@ -26,8 +26,11 @@ const AboutUs = () => {
                 We help you achieve and maintain your health and fitness goals
                 through enjoyable training experience in a community of
                 likeminded people who are looking to stay active, in both mind
-                and body. Nutrition education and mindset coaching are woven
-                into the fabric of every member’s journey led by supportive and
+                and body.
+              </p>
+              <p>
+                Nutrition education and mindset coaching are woven into the
+                fabric of every member’s journey led by supportive and
                 knowledgeable coaches, in a non-intimidating environment with an
                 amazing support network around you.
               </p>
@@ -42,31 +45,22 @@ const AboutUs = () => {
                 <div className="content">
                   <h2>Who we are</h2>
                   <p>
-                    This is not a gym, it’s health & Fitness like never before!
-                  </p>
-                  <p>
-                    That's the promise of owner Karolina who's range of broad
-                    experience within the health industry offers a refreshing
-                    yet dynamic approach to the world of fitness.
+                    This is not a gym, it’s the most effective self defence
+                    &amp; fitness like never before! That’s the promise of owner
+                    Piotr who’s range of broad experience within the Krav Maga
+                    &amp; fitness industry offers a refreshing yet dynamic
+                    approach to the world of training.
                   </p>
                   <p>
                     I wanted to create a welcoming and engaging community that
-                    thrives off of helping each other succeed in their own
-                    individual weight loss journeys.
-                  </p>
-                  <p>
-                    I don’t want our members to feel like just another number in
-                    another overcrowded gym, but an important part of this new
-                    and exciting tribe; an opportunity to connect with other
-                    like minded people and most importantly to enjoy yourselves
-                    in a non intimidating and friendly environment with no egos!
-                  </p>
-                  <p>
-                    My commitment and passion for helping others is why we do
-                    this. It’s clear to see this in the results we have
-                    delivered for our past clients. Their success stories have
-                    leapfrogged their perso- nal growth and progression to more
-                    than just obtaining the figure of their dreams.
+                    thrives off of helping each other succeed in your own
+                    individual journeys. I don’t want our members to feel like
+                    just another number in another overcrowded gym, but an im-
+                    portant part of this new and exciting tribe; an opportunity
+                    to connect with other like minded people and most
+                    importantly to enjoy yourselves in a non intimidating and
+                    friendly environment with no egos! My commitment and passion
+                    for helping others is why we do this.
                   </p>
                 </div>
               </div>
@@ -84,24 +78,18 @@ const AboutUs = () => {
                 <div className="content">
                   <h2>Who we help</h2>
                   <p>
-                    We are not a big gym with lots of weird machines. You do not
-                    train amongst "strangers". The instructors are not
-                    intimidating body builders & other members aren’t super fit
-                    elite athletes. We could give you an endless list of reasons
-                    to join our community.
+                    We are not a big intimidating gym with lots of weird
+                    machines. You do not train amongst "strangers". The
+                    instructors are not intimidating personalities &amp; other
+                    members aren't super fit elite athletes.
                   </p>
                   <p>
-                    Instead, let's start with what brought you to this vey
-                    moment, visiting our website.
-                  </p>
-                  <p>
-                    Are you a busy person everyday? Trying to balance work,
-                    social and home life? Bored of gym? Perhaps you haven't
-                    worked out for 20 years and feel breathless just walking up
-                    the stairs?
-                  </p>
-                  <p>
-                    We get it. This is why Sega Fitness is the place for you.
+                    We could give you an endless list of reasons to join our
+                    community. Instead, let's start with what brought you to
+                    this vey moment, visiting our website. Curiosity? Bored of
+                    the gym? Are you busy everyday person? Trying to balance
+                    work, social and home life? Perhaps you haven't worked out
+                    for 20 years and feel breathless just walking up the stairs?
                   </p>
                 </div>
               </div>
@@ -113,36 +101,28 @@ const AboutUs = () => {
                 <div className="content">
                   <h2>My story</h2>
                   <p>
-                    In 2018 I was 33 years old and just gave birth to my second
-                    beautiful boy - Freddie, I felt out of shape, breathless and
-                    insecure. The thought of going to the gym made me feel
-                    nervous and uncomfortable.
+                    I began training Krav Maga in 2008. Throughout my journey, I
+                    trained in the greatest Krav Maga Organisations across the
+                    globe and have been taught by the world's elite including
+                    Eyal Yanilov, Andrzej Marczak, and Tomasz Adamczyk, to name
+                    a few.
                   </p>
                   <p>
-                    I turned to fitness, powered through and lost 16kg of
-                    unwanted weight with the love and support of my husband but
-                    have to admit that the journey wasn't pleasant nor easy to
-                    get back into shape in mid thirties.
-                  </p>
-                  <p>
-                    In 2019 I finally took the leap to launch Sega Fitness with
-                    the aim to provide fun and varied programmes, where every
-                    single client feels 100% supported in all areas to be the
-                    best versions of themselves within a supportive community of
-                    like-minded individuals.
+                    After founding the Krav Maga Academy in 2013, I have been
+                    living and breathing Krav Maga everyday teaching civilians,
+                    military, special forces law enforcement units and corporate
+                    clients worldwide.
                   </p>
                   <p>
                     I understand that starting something new can be scary, but I
-                    too have gone through the same journey as you are about to.
-                    Although I am a qualified fitness professional, I am a
-                    normal person who lives a normal life just like you.
+                    too have gone through the same journey as you are about too.
+                    I don't want you to miss out on this next stage of our
+                    exciting new adventure.
                   </p>
                   <p>
-                    I don't want you to miss out on this next stage of our
-                    exciting new adventure. If you’re committed to bringing out
-                    the best in yourself in the next 365 days whilst having fun,
-                    and socialising with people of the same fitness levels as
-                    yourself, then I can't wait to see you on the other side.
+                    If you're committed to bringing out the best in yourself in
+                    the next 365 days whilst having fun, and socialising with
+                    people then I can’t wait to see you on the other side.
                   </p>
                 </div>
               </div>

@@ -3,7 +3,7 @@
 
 .getStartedPageContainer {
   .greenBranding {
-    color: $brand-green;
+    color: $brand-orange;
   }
 
   .banner {
@@ -85,12 +85,12 @@
     }
 
     .calendar {
-      border: 8px $brand-green solid;
+      border: 8px $brand-orange solid;
     }
   }
 
   .ctaWrapper {
-    background-color: $brand-blue;
+    background-color: $brand-grey;
     padding: 30px 0;
     color: #fff;
 
@@ -113,6 +113,7 @@
 
     .testimonial {
       padding: 0 30px;
+      flex: 1;
 
       img {
         width: 100%;

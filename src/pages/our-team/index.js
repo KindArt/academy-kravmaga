@@ -1,143 +1,232 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../../components/Layout"
 import SEO from "../../components/Seo"
 import NavigationBar from "../../components/NavigationBar"
-import karolinaImg from "../../images/profile-karolina.png"
-import aniaImg from "../../images/profile-ania.png"
-import joeImg from "../../images/profile-joe.png"
+import Modal from "../../components/Modal"
+import profilePete from "../../images/profile-pete.png"
 
 import "./style.scss"
 
-const TeamMemberCard = ({ imageUrl, ctaUrl, name, role }) => (
-  <div className="teamCard">
-    <img src={imageUrl} alt={name} />
-    <h2 className="name">{name}</h2>
-    <h3 className="role">{role}</h3>
-  </div>
-)
+const TeamMemberCard = ({ imageUrl, ctaUrl, name, role, children }) => {
+  const [show, setShow] = useState(false)
 
-const About = () => (
-  <Layout>
-    <SEO title="Our Team" />
-    <div className="ourTeamPageContainer">
-      <NavigationBar />
-      <div className="banner">
-        <div className="container">
-          <h1>Our Team</h1>
-        </div>
+  return (
+    <>
+      {show && (
+        <Modal
+          title={name}
+          body={children}
+          handleClose={() => setShow(false)}
+        />
+      )}
+      <div className="teamCard">
+        <img src={imageUrl} alt={name} />
+        <h2 className="name">{name}</h2>
+        <h3 className="role">{role}</h3>
+        <button className="button cta" onClick={() => setShow(true)}>
+          Learn More
+        </button>
       </div>
-      <div className="mainContent">
-        <div className="container">
-          <div className="team">
-            <div className="topRow">
-              <div className="teamMember">
-                <TeamMemberCard
-                  name="Karolina Sega - Fajecka"
-                  role="Owner &amp; Founder"
-                  imageUrl={karolinaImg}
-                />
+    </>
+  )
+}
 
-                <p>
-                  Karolina, the founder of Sega fitness and mother of two
-                  beautiful boys, turned to fitness after feeling breathless,
-                  out of shape and insecure after the birth of her second child.
-                </p>
-                <p>
-                  The thought of going to the gym made her feel nervous and
-                  uncomfortable. She powered through and lost 16kg of unwanted
-                  weight but admitted the journey wasn’t pleasant nor easy for
-                  her to get back into shape in her mid thirties.
-                </p>
-                <p>
-                  Her mission is to prevent others from going through the same
-                  struggles she did, instead by offering a supportive network
-                  where people can work out safely whilst having fun and without
-                  feeling overwhelmed.
-                </p>
-                <p>
-                  In 2019 Karolina finally took the leap to launch Sega Fitness
-                  with the aim to provide fun and varied programmes, where every
-                  single client feels 100% supported in all areas to be the best
-                  versions of themselves within a supportive community of
-                  like-minded individuals.
-                </p>
-                <p>
-                  "I understand that starting something new can be scary, but I
-                  too have gone through the same journey as you are about too.
-                  Although I am a qualified fitness professional, I am a normal
-                  person who lives a normal life just like you. I don’t want you
-                  to miss out on this next stage of our exciting new adventure.
-                  If you’re committed to bringing out the best in yourself in
-                  the next 365 days whilst having fun, and socialising with
-                  people of the same fitness levels as yourselves, then I can’t
-                  wait to see you on the other side."
-                </p>
+const About = () => {
+  return (
+    <Layout>
+      <SEO title="Our Team" />
+      <div className="ourTeamPageContainer">
+        <NavigationBar />
+        <div className="banner">
+          <div className="container">
+            <h1>Our Team</h1>
+            <p className="summary">Not all superheroes need to wear masks.</p>
+          </div>
+        </div>
+        <div className="mainContent">
+          <div className="container">
+            <div className="team">
+              <div className="row">
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Piotr Fajecki"
+                    role="Founder &amp; Director of Training"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      The man who started it all - Piotr began training Krav
+                      Maga in 2008.
+                    </p>
+                    <p>
+                      Throughout his journey, he has trained in the greatest
+                      Krav Maga Organisations across the globe and has been
+                      taught by the world's elite including Eyal Yanilov,
+                      Andrzej Marczak &amp; Tomasz Adamczyk, to name a few.
+                    </p>
+                    <p>
+                      After founding the Krav Maga Academy in 2013, he’s been
+                      living and breathing Krav Maga everyday teaching
+                      civilians, military, special forces law enforcement units
+                      and corporate clients worldwide.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Instructor: Expert Level 2</li>
+                      <li>Combat Firearms Instructor</li>
+                      <li>Close Protection Operative</li>
+                      <li>Krav Maga Kids and Teen Instructor</li>
+                      <li>BTEC Level 3 Advanced Award in Conﬂict Management</li>
+                      <li>
+                        BTEC Level 3 Advanced Award in Self Defence Instruction
+                      </li>
+                      <li>Member of European Security Centre</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
+
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Karolina Sega Fajecka"
+                    role="Academy Co-Founder"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      The brains behind the business, Karolina makes things
+                      happen.
+                    </p>
+                    <p>
+                      In 2019 Karolina finally took the leap to launch Sega
+                      Fitness with the aim to provide fun and varied programmes,
+                      where every single client feels 100% supported in all
+                      areas to be the best versions of themselves within a
+                      supportive community of like-minded individuals.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Kids Instructor</li>
+                      <li>Krav Maga Practitioner 1 BTEC</li>
+                      <li>
+                        Level 3 Advanced Award in Self Defence Instruction
+                      </li>
+                      <li>QA Level 3 Award in Paediatric First Aid (QCF)</li>
+                      <li>Level 2 Fitness Instructor</li>
+                      <li>Level 3 Personal Trainer</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
+
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Dan Maloney"
+                    role="Instructor"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      In 2016 Dan arranged for him and his partner to attend a
+                      trial class and from that first session he was hooked.
+                      That first session at Academy was a real eye opener. He
+                      fell in love with Krav Maga for its simplicity and
+                      effectiveness.
+                    </p>
+                    <p>
+                      It wouldn't be long until Dan progressed through Academy
+                      ranks and been selected on Instructor Development program
+                      he successfully completed in late 2018.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Instructor, Graduate Level 2</li>
+                      <li>Krav Maga Kids Instructor</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
               </div>
-            </div>
 
-            <div className="bottomRow">
-              <div className="teamMember">
-                <TeamMemberCard
-                  name="Ania Hampelska"
-                  role="Personal Trainer"
-                  imageUrl={aniaImg}
-                />
-                <p>
-                  In 2011, I qualified as a Fitness Instructor and started
-                  working with a few fitness clubs.
-                </p>
-                <p>
-                  I was awarded a Scholarship in Dance for my achievements in
-                  2008 and 2009. However, I began my adventure with dancing when
-                  I was nine years old.
-                </p>
-                <p>
-                  In 2008-2010, I qualified as a dance Instructor and my
-                  speciality was Jazz Dance, in which I have achieved a Level 3.
-                </p>
-                <p>
-                  For almost seven years, I was working for Dance Theatre in
-                  Poland as a soloist and group dancer. My life has changed
-                  directions over the years but fitness is a big part of my life
-                  and I am very passionate about it
-                </p>
-                <p>
-                  I am very happy to be part of the Sega Fitness family. Let’s
-                  get to work!
-                </p>
-              </div>
+              <div className="row">
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Kirsty Loft"
+                    role="Instructor"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      Kirstie plays a vital role in the Academy, joining us in
+                      January 2019 to teach Kids Martial Arts classes and
+                      provide support to the Medway HQ.
+                    </p>
+                    <p>
+                      She started training in Krav Maga in early 2018 but brings
+                      years of Martial Arts experience including competing at a
+                      national level and instructing kids classes in Taekwondo.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Practitioner Level 2</li>
+                      <li>2nd Dan black belt in Taekwondo</li>
+                      <li>2nd Dan black belt in Kaizendo</li>
+                      <li>Krav Maga Kids Instructor</li>
+                      <li>Martial Arts Instructor</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
 
-              <div className="teamMember">
-                <TeamMemberCard
-                  name="Joe Kelly"
-                  role="Personal Trainer"
-                  imageUrl={joeImg}
-                />
-                <p>
-                  Certificates in Gym based Boxing, Studio cycling and Metabolic
-                  Circuits.
-                </p>
-                <p>
-                  I'm a PT with a passion for helping others feel good about how
-                  they look and improving their fitness levels.
-                </p>
-                <p>
-                  I believe that you can use exercise to help create and sustain
-                  a positive mindset, battling those negative thoughts we all
-                  get.
-                </p>
-                <p>
-                  By keeping nutrition nice and simple and making exercise fun,
-                  you can achieve any fitness goals you want to!
-                </p>
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Richard McCort"
+                    role="Instructor"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      Richard always enjoyed keeping fit and sports, having
+                      dabbled in several martial arts including Krav Maga. We're
+                      honoured that he has continued his journey with us and
+                      joined the Academy Team teaching adults in 2017.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Instructor, Graduate Level 2</li>
+                      <li>
+                        BTEC Level 3 Advanced Award in Self Defence Instruction
+                      </li>
+                      <li>Tactical Shooting Course Level 1</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
+
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Justin Bailey"
+                    role="Instructor"
+                    imageUrl={profilePete}
+                  >
+                    <p>
+                      Justin began training in Krav Maga with the Academy in
+                      2015, seeking the skills necessary to protect himself and
+                      his family should the need arise. He was also motivated by
+                      the fitness aspect of the training.
+                    </p>
+                    <p>
+                      Justin holds qualifications allowing him to work with our
+                      youngest students, teens &amp; adults. He has previously
+                      trained in Karate and Kickboxing and is an avid gym-goer.
+                    </p>
+                    <p>Qualifications:</p>
+                    <ul>
+                      <li>Krav Maga Instructor, Graduate Level 2</li>
+                      <li>Krav Maga Kids &amp; Teens Instructor</li>
+                      <li>Martial Arts Instructor</li>
+                      <li>Tactical Shooting Course Level 1</li>
+                    </ul>
+                  </TeamMemberCard>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default About
