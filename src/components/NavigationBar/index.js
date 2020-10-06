@@ -28,6 +28,9 @@ const NavigationBar = () => {
                 <Link to="/about-us">About</Link>
               </li>
               <li>
+                <Link to="/get-started">Get Started</Link>
+              </li>
+              <li>
                 <Link to="/our-team">Our Team</Link>
               </li>
               <li>
@@ -47,6 +50,9 @@ const NavigationBar = () => {
               </li>
               <li>
                 <Link to="/about-us">About</Link>
+              </li>
+              <li>
+                <Link to="/get-started">Get Started</Link>
               </li>
               <li>
                 <Link to="/our-team">Our Team</Link>

@@ -5,6 +5,13 @@ import SEO from "../../components/Seo"
 import NavigationBar from "../../components/NavigationBar"
 import Modal from "../../components/Modal"
 import profilePete from "../../images/profile-pete.png"
+import profileKarolina from "../../images/profile-karolina.png"
+import profileDan from "../../images/profile-dan.png"
+import profileKirstie from "../../images/profile-kirstie.png"
+import profileRichard from "../../images/profile-richard.png"
+import profileJustin from "../../images/profile-justin.png"
+import profileAmber from "../../images/profile-amber.png"
+import profileKerry from "../../images/profile-kerry.png"
 
 import "./style.scss"
 
@@ -89,7 +96,7 @@ const About = () => {
                   <TeamMemberCard
                     name="Karolina Sega Fajecka"
                     role="Academy Co-Founder"
-                    imageUrl={profilePete}
+                    imageUrl={profileKarolina}
                   >
                     <p>
                       The brains behind the business, Karolina makes things
@@ -120,7 +127,7 @@ const About = () => {
                   <TeamMemberCard
                     name="Dan Maloney"
                     role="Instructor"
-                    imageUrl={profilePete}
+                    imageUrl={profileDan}
                   >
                     <p>
                       In 2016 Dan arranged for him and his partner to attend a
@@ -136,7 +143,7 @@ const About = () => {
                     </p>
                     <p>Qualifications:</p>
                     <ul>
-                      <li>Krav Maga Instructor, Graduate Level 2</li>
+                      <li>Krav Maga Instructor, Graduate Level 3</li>
                       <li>Krav Maga Kids Instructor</li>
                     </ul>
                   </TeamMemberCard>
@@ -146,9 +153,9 @@ const About = () => {
               <div className="row">
                 <div className="teamMember">
                   <TeamMemberCard
-                    name="Kirsty Loft"
+                    name="Kirstie Loft"
                     role="Instructor"
-                    imageUrl={profilePete}
+                    imageUrl={profileKirstie}
                   >
                     <p>
                       Kirstie plays a vital role in the Academy, joining us in
@@ -175,7 +182,7 @@ const About = () => {
                   <TeamMemberCard
                     name="Richard McCort"
                     role="Instructor"
-                    imageUrl={profilePete}
+                    imageUrl={profileRichard}
                   >
                     <p>
                       Richard always enjoyed keeping fit and sports, having
@@ -185,7 +192,7 @@ const About = () => {
                     </p>
                     <p>Qualifications:</p>
                     <ul>
-                      <li>Krav Maga Instructor, Graduate Level 2</li>
+                      <li>Krav Maga Instructor, Graduate Level 3</li>
                       <li>
                         BTEC Level 3 Advanced Award in Self Defence Instruction
                       </li>
@@ -198,7 +205,7 @@ const About = () => {
                   <TeamMemberCard
                     name="Justin Bailey"
                     role="Instructor"
-                    imageUrl={profilePete}
+                    imageUrl={profileJustin}
                   >
                     <p>
                       Justin began training in Krav Maga with the Academy in
@@ -220,6 +227,44 @@ const About = () => {
                     </ul>
                   </TeamMemberCard>
                 </div>
+              </div>
+
+              <div className="row">
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Amber"
+                    role="Academy Supervisor"
+                    imageUrl={profileAmber}
+                  >
+                    <p>
+                      Amber joins the team as Academy Supervisor. Her
+                      responsibilities include managing the day-to-day operation
+                      of the Academy, welcoming students and their families to
+                      the venue and ensuring a pleasing experience.
+                    </p>
+                    <p>
+                      Amber has been a wrestling fanatic since 2014; she is
+                      currently being trained as a Martial Arts instructor and
+                      will join Kirstie in teaching our young students.
+                    </p>
+                  </TeamMemberCard>
+                </div>
+
+                <div className="teamMember">
+                  <TeamMemberCard
+                    name="Kerry"
+                    role="Programme Director"
+                    imageUrl={profileKerry}
+                  >
+                    <p>
+                      Kerry joins the Academy as Programme Director. She is
+                      responsible for holding initial consultations, upgrading
+                      existing members, as well as assisting with student
+                      onboarding and providing a stress-free joining process.
+                    </p>
+                  </TeamMemberCard>
+                </div>
+                <div className="teamMember hidden"></div>
               </div>
             </div>
           </div>

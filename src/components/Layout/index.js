@@ -73,6 +73,9 @@ const Layout = ({ children }) => {
                   <Link to="/about-us">About</Link>
                 </li>
                 <li>
+                  <Link to="/get-started">Get Started</Link>
+                </li>
+                <li>
                   <Link to="/our-team">Our Team</Link>
                 </li>
                 <li>
@@ -103,7 +106,9 @@ const Layout = ({ children }) => {
               <h3 className="title">Contact Us</h3>
               <p className="companyName">{fullTitle}</p>
 
-              <p className="companyAddress">{companyAddress}</p>
+              <p className="lightWeight">{companyAddress}</p>
+
+              <p className="lightWeight">{contactNumber}</p>
 
               <div className="socialMedia">
                 <a href={facebookUrl} target="_blank" rel="noreferrer">

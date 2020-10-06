@@ -24,14 +24,11 @@ body {
   }
 }
 .contactBar {
-  display: none;
+  display: flex;
+  align-items: center;
+
   background-color: $brand-orange;
   height: 40px;
-
-  @media (min-width: $tablet-breakpoint-width) {
-    display: flex;
-    align-items: center;
-  }
 
   .headerContent {
     display: flex;
@@ -39,6 +36,10 @@ body {
   }
 
   .socialMedia {
+    @media (max-width: $tablet-breakpoint-width) {
+      display: none;
+    }
+
     .icon {
       width: 25px;
       height: 25px;
@@ -127,7 +128,7 @@ footer {
       font-size: 1.25rem;
     }
 
-    .companyAddress {
+    .lightWeight {
       font-weight: 300;
     }
 
